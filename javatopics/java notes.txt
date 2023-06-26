@@ -1,0 +1,104 @@
+The jmod command in Java provides several modes to perform different operations on modular JAR files. The valid modes for the jmod command are:
+
+create: Create a modular JAR file from a set of files and directories.
+describe: Display the metadata of a modular JAR file.
+extract: Extract the contents of a modular JAR file.
+hash: Compute and display the hash values of a modular JAR file.
+list: List the contents of a modular JAR file.
+repackage: Create a modular JAR file by combining modules from different JAR files.
+validate: Validate the integrity of a modular JAR file.
+
+
+In Java, the module declaration is specified in a file called module-info.java. The module-info.java
+
+
+A service in the context of Java modules consists of the following components:
+
+Service Provider Interface (SPI): The Service Provider Interface is an interface or an abstract class that defines the contract or API for a service. It acts as a common interface that service providers must implement to provide the service functionality.
+
+Service Provider: A Service Provider is an implementation class that provides the actual implementation of the service. It implements the Service Provider Interface (SPI) and can be dynamically discovered and loaded at runtime.
+
+Service Registry: The Service Registry is a mechanism that allows service providers to register their implementations of the Service Provider Interface. It maintains a mapping between the SPI and the corresponding service provider implementation.
+
+Service Consumer: A Service Consumer is the client code that uses the service functionality. It interacts with the Service Registry to dynamically discover and obtain an instance of the service provider.
+
+
+
+public final class ImmutableClass {
+    private final int value;
+
+    public ImmutableClass(int value) {
+        this.value = value;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public ImmutableClass withUpdatedValue(int newValue) {
+        return new ImmutableClass(newValue);
+    }
+}
+
+
+-->shutdown 
+shuts all threads in orderly manner executor service
+
+
+--->
+When the arrays are the same, the compare() method returns 0, while the mismatch() method returns ‐1.
+ mismatch() returns the index of the first element that is different. 
+ By contrast, the compare() method would return a negative number if filling in the third blank since 'i' is smaller than 'o'.
+ 
+--->
+Java methods must start with a letter, the dollar $ symbol, or the underscore _ character.
+
+-->
+A switch statement supports the primitive types byte, short, char, and int and their associated wrapper classes Character, Byte, Short, and Integer. 
+It also supports the String class and enumerated types. 
+Finally, it permits var under some circumstances, such as if the type can resolve to one of the previous types 
+
+--->
+In Java, a locale can be represented by a language code in lowercase, or a language and country code, with language in lowercase and country in uppercase.
+ 
+ 
+--->
+The IntUnaryOperator takes an int value and returns an int value
+
+
+--->
+ Comparable is implemented in the class being compared. To be useful, such a class must have instance variables to compare, ruling out a lambda.
+ By contrast, a Comparator is often implemented with a lambda
+ 
+--->
+Resource starvation is when a single active thread is perpetually unable to gain access to a shared resource. 
+Livelock is a special case of resource starvation, in which two or more active threads are unable to gain access to shared resources,
+repeating the process over and over again.
+
+
+--->
+A race condition is an undesirable result when two tasks that should be completed sequentially are completed at the same time. The result is often corruption of data in some way.
+If two threads are both modifying the same int variable and there is no synchronization, then a race condition can occur with one of the writes being lost
+
+
+
+-->
+An identifier name must begin with a letter, dollar sign ($), or underscore (_)
+
+
+-->
+ enum constructors cannot be public. 
+ Line 10 also does not compile because a case statement must use an enum value without the type
+ 
+ 
+ ---->
+ However, the Collections.binarySearch() method assumes that the list is sorted in ascending order according to its natural ordering
+ 
+ 
+ ---->
+ The rule is to take the negative index of where it would be inserted and subtract 1. It would need to be inserted as the third element.
+ Since indexes are zero‐based, this is index 2. We take the negative, which is ‐2, and subtract 1, giving ‐3.
+ 
+ binary search
+ executor service
+ 
