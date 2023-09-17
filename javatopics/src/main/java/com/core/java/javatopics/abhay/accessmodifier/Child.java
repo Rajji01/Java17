@@ -7,6 +7,7 @@ public class Child extends Helper02 {
         Child helper02 = new Child();
         System.out.println(helper02.val3);
         System.out.println(helper02.val3);
+        System.out.println("my branch first commit");
     }
     public void p1(){
 
